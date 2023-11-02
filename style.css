@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Handlee", cursive;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translatex(50%);
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+ul {
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  font-size: 2em;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  max-width: 300px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.h1_co_1 {
+  font-size: 5em;
+}
+
+.p_co_1 {
+  font-style: italic;
+  color: #ff8d3b;
+}
+.p_co_2 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.main_con {
+  height: 100dvh;
+  align-items: center;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+.column1 {
+  display: grid;
+  justify-items: center;
+}
+
+.column2 {
+  display: grid;
+  justify-self: center;
+}
+
+.column3 {
+  height: 100dvh;
+  scroll-snap-align: center;
+}
+
+.colorbox {
+  background-color: #ffa767;
+  height: 100%;
+}
+.colorbox_h1 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.projects img {
+  max-width: 90%;
+  transition: transform 0.5s;
+  border-radius: 2%;
+}
+
+.projects img:hover {
+  transform: scale(1.03);
+}
+.project1 {
+  max-width: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects {
+  height: 100%;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.links a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
