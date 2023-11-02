@@ -81,11 +81,24 @@ li {
   background-color: #ffa767;
   height: 100%;
 }
+
+.colorbox_grid {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1500px;
+  grid-template-columns: 1fr 1fr;
+}
 .colorbox_h1 {
   text-align: center;
+  font-size: 3em;
   padding-top: 2em;
 }
 
+.colorbox_grid p {
+  padding-top: 1em;
+  font-size: 2em;
+}
+/*
 .projects img {
   max-width: 90%;
   transition: transform 0.5s;
@@ -95,32 +108,4 @@ li {
 .projects img:hover {
   transform: scale(1.03);
 }
-.project1 {
-  max-width: 100%;
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.projects {
-  height: 100%;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-}
-
-.links a {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: black;
-}
+*/
