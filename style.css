@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Shrikhand&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +11,42 @@ html {
   scroll-behavior: smooth;
 }
 
+.pink {
+  color: lightpink;
+}
+.blue {
+  color: rgb(113, 209, 196);
+}
+.orange {
+  color: #fd781f;
+}
+.yellow {
+  color: #ffca67;
+}
+.salmon {
+  color: #ffb8a7;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  height: 100dvh;
+  background-color: rgb(255, 235, 207);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.font-size {
+  display: flex;
+  font-family: "Shrikhand", serif;
+  font-size: 10em;
+  text-align: center;
+  justify-content: center;
+}
+
 body {
-  font-family: "Handlee", cursive;
+  background-color: rgb(255, 235, 207);
 }
 
 header {
@@ -37,17 +73,15 @@ ul {
 
 li {
   list-style-type: none;
+  font-family: "Shrikhand", serif;
 }
 
 .h1_co_1 {
   font-size: 5em;
+  font-family: "Shrikhand", serif;
 }
 
 .p_co_1 {
-  font-style: italic;
-  color: #ff8d3b;
-}
-.p_co_2 {
   font-size: 1.5em;
   margin-top: 0.5em;
 }
@@ -87,16 +121,32 @@ li {
   margin: 0 auto;
   max-width: 1500px;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .colorbox_h1 {
   text-align: center;
   font-size: 3em;
-  padding-top: 2em;
+  padding-top: 1.5em;
+  font-family: "Shrikhand", serif;
 }
 
 .colorbox_grid p {
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 2em;
+}
+
+.vs_icons {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.vs_icons img {
+  transform: scale(2.5);
 }
 /*
 .projects img {
