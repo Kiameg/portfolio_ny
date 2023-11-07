@@ -10,13 +10,21 @@
 
 <body>
   <header>
+
     <nav class="nav_bar">
       <ul>
-        <li>About me</li>
         <li>
-          <div class="img_logo"><img class="logo" src="img/logo.webp" alt=""></div>
+          <div class="img_logo"><a href=""><img class="logo" src="img/logo.webp" alt=""></a></div>
         </li>
-        <li>Contact</li>
+        <a href="#column4">
+          <li>About me</li>
+        </a>
+        <a href="">
+          <li>Contact</li>
+        </a>
+        <a href="#colorbox">
+          <li>Projects</li>
+        </a>
       </ul>
     </nav>
   </header>
@@ -30,14 +38,15 @@
       </div>
       <div class="font-size">
         <span class="blue">P</span><span class="orange">R</span><span class="pink">O</span><span
-          class="orange">F</span><span class="yellow">I</span><span class="pink">L</span><span class="salmon">E</span>
+          class="orange">F</span><span class="yellow">I</span>
+        <span class="pink">L</span><span class="salmon">E</span>
       </div>
     </section>
     <div class="main_con">
       <section class="column1">
         <div class="start_text">
-          <h1 class="h1_co_1">Hi</h1>
-          <h1 class="h1_co_1">I'm Kia!</h1>
+          <h1 id="h1_co_1">Hi</h1>
+          <h1 id="h1_co_1">I'm Kia!</h1>
 
           <p class="p_co_1">I am a passionate woman that loves to express my creativity alongside like-minded
             individuals
@@ -56,32 +65,90 @@
           <img src="/img/portrait.webp" alt="">
         </div>
       </section>
+      <div class="arrow"><a href="#colorbox_h1"><img src="img/ArrowCircleDown.svg" alt=""></a></div>
     </div>
 
+
     <section class="column3">
-      <div class="colorbox">
-        <h1 class="colorbox_h1">About me </h1>
-        <div class="colorbox_grid">
-          <div>
-            <p>My name is Kia Meggele and i am studying multimedia design at KEA. I've had the opportunity to improve my
-              skills in a wide
-              range of
-              programs, including Adobe InDesign, Figma and Photoshop. Additionally, I enjoy coding and have experience
-              with HTML,
-              CSS, and a touch of JavaScript.
-            </p>
-            <p>I am also familiar with</p>
+      <div id="colorbox">
+        <h1 id="colorbox_h1">Projects</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <div class="h1_swiper">
+                <h1>2 Semester exam</h1>
+              </div>
+              <a target="_blank" href="https://jouxli.netlify.app/"><img src="img/jouxli.webp" alt=""></a>
+              <p class="p_swiper">I was collaborating with a bunch of amazing ladies on a project for the Danish jewelry
+                brand, jOUXli.
+                Together we made a
+                succesful website along with jOUXli's digital marketing stragety. My tasks were mainly the Javascript
+                used for the menu
+                and basic HTML and CSS throughout the website.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="h1_swiper">
+                <h1>Sakura Festival</h1>
+              </div>
+              <a target="_blank" href="https://cosmic-chebakia-2ff9cc.netlify.app/listview/"><img src="img/sakura.webp"
+                  alt=""></a>
+              <p class="p_swiper">Me and my group had a task for the danish Sakura Festival. We had to redesign the
+                website and make it more attractive for a danish crowd. I've helped with figuring out the design but
+                mainly coding html and css on some of the website.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="h1_swiper">
+                <h1>1 Semester exam</h1>
+              </div>
+              <a target="_blank" href="https://kiameg.github.io/1semester-eksamen/index.html"><img src="img/1sem.webp"
+                  alt=""></a>
+              <p class="p_swiper">This was my first semester exam. One of the biggest projects I had done at the time. I
+                enjoyed designing and coding the site. I went for a futuristic vibe and Roboto font which suited me at
+                the time, and I remember being very proud. (Ps. the links to projects on this website does not function
+                anymore)</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="h1_swiper">
+                <h1>1 Semester game</h1>
+              </div>
+              <a target="_blank" href="https://kiameg.github.io/website_game/spil.html"><img src="img/game_nuts.webp"
+                  alt=""></a>
+              <p class="p_swiper">Last but not least, this was a small javascript game I created on my first semester.
+                This was a fun ride, making everything from scratch such as, the sounds and drawings/backgrounds. I
+                would love to try to make it again someday. (This game contains NSFW content)</p>
+            </div>
           </div>
-          <section class="vs_icons">
-            <img src="img/react.svg" alt="">
-            <img src="img/sass.svg" alt="">
-            <img src="img/tailwind.svg" alt="">
-            <img src="img/vite.svg" alt="">
-          </section>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-
       </div>
-
+    </section>
+    <section id="column4">
+      <h1 id="column4_h1">About me</h1>
+      <div class="column4_grid">
+        <div class="column4_img">
+          <img src="img/kia.png" alt="">
+        </div>
+        <div class="column4_p">
+          <p>My name is Kia, I am twentyeight years old and I study multimedia design. At KEA, i've had the opportunity
+            to
+            improve my skills in a wide range of
+            programs, including Adobe InDesign, Figma and Photoshop. Additionally, I enjoy coding and have
+            experience with HTML,
+            CSS, and a touch of JavaScript.</p>
+          <p>I've recently started to get familiar with; Vite, React, Tailwind and Sass.</p>
+          <p>In addition to spending time with my family and friends, I use my time for
+            gaming and creative hobbies such as drawing,
+            coding, or playing around with Adobe's programs for small creative tasks. I enjoy watching
+            movies, series, and I love to
+            travel. Unfortunately, I also have a significant time sink in memes and funny videos, oops!</p>
+        </div>
+      </div>
     </section>
   </main>
   <script type="module" src="main.js"></script>
