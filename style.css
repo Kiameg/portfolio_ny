@@ -90,9 +90,26 @@ a :hover {
   display: flex;
   justify-self: center;
   align-self: flex-end;
+  margin-bottom: 1em;
+}
+
+.arrow2 {
+  margin-top: 3em;
+}
+
+.arrow3 {
+  margin: 0 auto;
+  margin-top: 7em;
 }
 
 .arrow img:hover {
+  transform: scale(1.2);
+}
+
+.arrow2 img:hover {
+  transform: scale(1.2);
+}
+.arrow3 img:hover {
   transform: scale(1.2);
 }
 
@@ -228,10 +245,6 @@ a :hover {
   margin-bottom: 2em;
 }
 
-.hobby_icons img {
-  max-width: 150px;
-}
-
 #column5 {
   scroll-snap-align: center;
   height: 100dvh;
@@ -266,4 +279,12 @@ a :hover {
 .colorbox2 a {
   color: initial;
   text-decoration: underline;
+}
+
+.hygge_img {
+  margin-top: 3em;
+}
+
+.contact_hover a:hover {
+  color: #fd781f;
 }
