@@ -59,7 +59,7 @@ header {
   justify-content: center;
   height: 150px;
 }
-ul {
+header ul {
   height: 100%;
   display: flex;
   gap: 5em;
@@ -99,7 +99,7 @@ a :hover {
 
 .arrow3 {
   margin: 0 auto;
-  margin-top: 7em;
+  margin-top: 2em;
 }
 
 .arrow img:hover {
@@ -126,7 +126,7 @@ a :hover {
   font-family: "Farsan", cursive;
 }
 
-.main_con {
+#main_con {
   height: 100dvh;
   align-items: center;
   max-width: 1500px;
@@ -146,6 +146,7 @@ a :hover {
   justify-self: center;
 }
 
+/********************Project section********************/
 .column3 {
   height: 100dvh;
   scroll-snap-align: center;
@@ -212,6 +213,7 @@ a :hover {
   max-width: 500px;
 }
 
+/********************About me section********************/
 #column4 {
   scroll-snap-align: center;
   height: 100dvh;
@@ -245,6 +247,74 @@ a :hover {
   margin-bottom: 2em;
 }
 
+.about_me {
+  display: grid;
+  margin-top: 3em;
+  font-family: "Farsan", cursive;
+  grid-template-columns: repeat(2, 20%);
+  justify-content: center;
+}
+
+.ul_about li {
+  font-family: "Farsan", cursive;
+  color: rgb(59, 56, 56);
+}
+
+.ul_con {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 1.8em;
+}
+.bold {
+  font-weight: 700;
+}
+
+.flex_3 h3 {
+  font-size: 3em;
+  color: #fd781f;
+}
+
+.flex_4 h3 {
+  font-size: 3em;
+  color: #fd781f;
+}
+.flex_3,
+.flex_4 {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.aboutme_btn {
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 5%;
+  background-color: #ffa767;
+  font-family: "Farsan", cursive;
+}
+
+.back_btn:hover {
+  color: #fd781f;
+}
+
+.back_btn {
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 5%;
+  background-color: #ffa767;
+  font-family: "Farsan", cursive;
+}
+
+.aboutme_btn:hover {
+  color: #fd781f;
+}
+
+/*********************Contact section*******************/
 #column5 {
   scroll-snap-align: center;
   height: 100dvh;
@@ -287,4 +357,114 @@ a :hover {
 
 .contact_hover a:hover {
   color: #fd781f;
+}
+
+.top_btn {
+  margin: 0 auto;
+  max-width: 200px;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 5%;
+  background-color: #ffa767;
+  font-family: "Farsan", cursive;
+}
+
+.a_btn a {
+  text-decoration: none;
+}
+
+.top_btn:hover {
+  color: #fd781f;
+}
+/********************Hide********************/
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 2560px) {
+  header ul {
+    font-size: 2.8em;
+  }
+
+  header {
+    height: 200px;
+  }
+  .logo {
+    max-width: 400px;
+  }
+  .img_logo {
+    margin-left: -12em;
+  }
+  .p_co_1 {
+    font-size: 2.5em;
+  }
+  .portrait img {
+    width: 700px;
+  }
+  .portrait {
+    margin-left: 5em;
+  }
+  /*****projects*****/
+  .swiper-slide img {
+    max-width: 700px;
+  }
+  .h1_swiper {
+    font-size: 1.7em;
+  }
+  .p_swiper {
+    font-size: 1.8em;
+    max-width: 700px;
+  }
+
+  /*****about me*****/
+  .column4_p {
+    font-size: 2em;
+    margin-top: 2em;
+  }
+
+  .aboutme_btn {
+    margin-top: 4em;
+    max-width: 400px;
+    font-size: 2em;
+  }
+
+  .column4_img img {
+    width: 800px;
+  }
+
+  .ul_con {
+    font-size: 2.5em;
+  }
+
+  .flex_3 h3 {
+    font-size: 4em;
+  }
+
+  .flex_4 h3 {
+    font-size: 4em;
+  }
+
+  .back_btn {
+    max-width: 400px;
+    font-size: 2em;
+  }
+
+  /*****contact*****/
+
+  .colorbox2 h2 {
+    font-size: 5em;
+  }
+  .colorbox2 p {
+    font-size: 4em;
+  }
+
+  .hygge_img {
+    margin-top: 5em;
+    width: 1200px;
+  }
+
+  .top_btn {
+    max-width: 400px;
+    font-size: 2em;
+  }
 }

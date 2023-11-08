@@ -5,6 +5,26 @@ import Letterize from "letterizejs";
 import Swiper from "swiper";
 import { Mousewheel, EffectCards, Navigation } from "swiper/modules";
 
+window.addEventListener("load", showPage);
+document.querySelector(".aboutme_btn").addEventListener("click", aboutMe);
+document.querySelector(".back_btn").addEventListener("click", showPage);
+
+function showPage() {
+  console.log("showPage");
+  document.querySelector(".about_me").classList.add("hide");
+  document.querySelector(".back_btn").classList.add("hide");
+  document.querySelector(".aboutme_btn").classList.remove("hide");
+  document.querySelector(".column4_grid").classList.remove("hide");
+}
+
+function aboutMe() {
+  console.log("aboutMe");
+  document.querySelector(".column4_grid").classList.add("hide");
+  document.querySelector(".aboutme_btn").classList.add("hide");
+  document.querySelector(".about_me").classList.remove("hide");
+  document.querySelector(".back_btn").classList.remove("hide");
+}
+
 const swiper = new Swiper(".swiper", {
   modules: [Mousewheel, EffectCards, Navigation],
   direction: "horizontal",
