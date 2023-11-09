@@ -57,6 +57,7 @@ header {
   transform: translatex(50%);
   display: flex;
   justify-content: center;
+  width: 100%;
   height: 150px;
 }
 header ul {
@@ -69,11 +70,15 @@ header ul {
   align-items: center;
 }
 .logo {
-  max-width: 300px;
+  max-width: 120px;
 }
+
 .img_logo {
-  margin-left: -15em;
+  position: absolute;
+  top: 1em;
+  left: 5em;
 }
+
 a {
   text-decoration: none;
 }
@@ -378,23 +383,23 @@ a :hover {
 }
 /********************Hide********************/
 .hide {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (min-width: 2560px) {
   header ul {
     font-size: 2.8em;
   }
-
+  .font-size {
+    font-size: 5px;
+  }
   header {
     height: 200px;
   }
   .logo {
     max-width: 400px;
   }
-  .img_logo {
-    margin-left: -12em;
-  }
+
   .p_co_1 {
     font-size: 2.5em;
   }
@@ -466,5 +471,220 @@ a :hover {
   .top_btn {
     max-width: 400px;
     font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  header ul {
+    font-size: 2em;
+    gap: 2em;
+  }
+
+  header {
+    height: 200px;
+  }
+  .logo {
+    max-width: 120px;
+  }
+  .img_logo {
+    left: 2em;
+    top: 1.5em;
+  }
+  .p_co_1 {
+    font-size: 1.7em;
+    max-width: 600px;
+  }
+  .portrait img {
+    width: 550px;
+  }
+  .h1_co_1 {
+    font-size: 4em;
+  }
+
+  .column1 {
+    margin-top: 10em;
+  }
+  #main_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: auto;
+    margin-top: 110%;
+  }
+
+  /*****projects*****/
+
+  .swiper-slide img {
+    max-width: 400px;
+  }
+  .h1_swiper {
+    font-size: 1.7em;
+  }
+  .p_swiper {
+    font-size: 1.7em;
+    max-width: 350px;
+  }
+  .swiper {
+    height: 70%;
+    width: 50%;
+  }
+
+  /*****about*****/
+  .column4_p {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    max-width: 700px;
+  }
+  .column4_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column4_img img {
+    width: 600px;
+    margin-top: 2em;
+  }
+
+  .ul_con {
+    font-size: 2em;
+  }
+
+  .flex_3 h3 {
+    font-size: 3em;
+  }
+
+  .flex_4 h3 {
+    font-size: 3em;
+  }
+
+  .back_btn {
+    font-size: 1.7em;
+    padding: 0.5em;
+  }
+
+  .aboutme_btn {
+    max-width: 400px;
+    font-size: 1.7em;
+  }
+
+  /*****contact*****/
+
+  .hygge_img {
+    margin-top: 15em;
+    width: 900px;
+    margin-bottom: 5em;
+  }
+
+  .top_btn {
+    max-width: 400px;
+
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  header ul {
+    font-size: 1.5em;
+    gap: 2em;
+  }
+
+  header {
+    height: 200px;
+    width: 100%;
+  }
+  .logo {
+    max-width: 100px;
+  }
+  .p_co_1 {
+    font-size: 1.5em;
+    max-width: 600px;
+  }
+  .portrait img {
+    width: 500px;
+    margin-top: 1em;
+  }
+  .h1_co_1 {
+    font-size: 3em;
+  }
+
+  #main_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: auto;
+    margin-top: 140%;
+  }
+
+  /*****projects*****/
+
+  .swiper-slide img {
+    max-width: 400px;
+  }
+  .h1_swiper {
+    font-size: 1.5em;
+  }
+  .p_swiper {
+    font-size: 1.5em;
+    max-width: 400px;
+  }
+  .swiper {
+    height: 60%;
+    width: 70%;
+  }
+
+  /*****about*****/
+  .column4_p {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 500px;
+  }
+  .column4_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutme_btn {
+    max-width: 300px;
+    font-size: 1.5em;
+  }
+
+  .column4_img img {
+    width: 500px;
+    margin-top: 2em;
+  }
+
+  .ul_con {
+    font-size: 1.7em;
+  }
+
+  .flex_3 h3 {
+    font-size: 2em;
+  }
+
+  .flex_4 h3 {
+    font-size: 2em;
+  }
+
+  .hygge_img {
+    margin-top: 10em;
+    width: 750px;
+  }
+
+  .top_btn {
+    max-width: 400px;
+    font-size: 1.5em;
   }
 }
