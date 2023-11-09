@@ -390,9 +390,7 @@ a :hover {
   header ul {
     font-size: 2.8em;
   }
-  .font-size {
-    font-size: 5px;
-  }
+
   header {
     height: 200px;
   }
@@ -479,7 +477,9 @@ a :hover {
     font-size: 2em;
     gap: 2em;
   }
-
+  .font-size {
+    font-size: 7em;
+  }
   header {
     height: 200px;
   }
@@ -592,6 +592,10 @@ a :hover {
   header ul {
     font-size: 1.5em;
     gap: 2em;
+  }
+
+  .font-size {
+    font-size: 5em;
   }
 
   header {
